@@ -1,0 +1,15 @@
+.main{
+	background-color: gray;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+}
+.sub{
+	background-color: gray;
+	padding: 80px;
+	text-align: center;
+	color: #fff;
+	display: none;
+}

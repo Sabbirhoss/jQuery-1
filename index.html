@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS link here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>jQuery practice</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jQuery">
+              <h1 class="bg-primary text-center">Click the button to show alert.</h1>
+              <button id="alert" class="btn btn-danger" type="button">Show alert</button>
+              <br><br><br>
+
+              <h1 class="bg-primary text-center">Click the button to hide/show the text.</h1>
+              <button id="hide" class="btn btn-info mr-5" type="button">Hide text</button>
+              <button id="show" class="btn btn-warning mr-5" type="button">Show text</button>
+              <button id="toggle" class="btn btn-warning mr-5" type="button">Toggle</button>
+
+              <button id="FadeOut" class="btn btn-info mr-5" type="button">FadeOut</button>
+              <button id="FadeIn" class="btn btn-danger mr-5" type="button">FadeIn</button>
+              <button id="FadeToggle" class="btn btn-dark mr-5" type="button">FadeToggle</button>
+              <button id="FadeTo" class="btn btn-dark mr-5" type="button">FadeTo</button>
+              <br><br>
+              <h2 class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</h2>
+
+              <br><br><br><br><br>
+
+              <div class="main">Click Me</div>
+              <div class="sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, than Custom script.js -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // full page alert
+        alert("Hello Md:Sabbir Hossain")
+        // button alert
+        $('#alert').click(function(){
+          alert("Hello every body.")
+        });
+        // hide
+        $('#hide').click(function(){
+          $('h2').hide();
+        });
+        // show
+        $('#show').click(function(){
+          $('h2').show();
+        });
+        // toggle
+        $('#toggle').click(function(){
+          $('h2').toggle(2000);
+        });
+        // FadeOut
+        $('#FadeOut').click(function(){
+          $('h2').fadeOut();
+        });
+        // FadeIn
+        $('#FadeIn').click(function(){
+          $('h2').fadeIn();
+        });
+        // FadeToggle
+        $('#FadeToggle').click(function(){
+          $('h2').fadeToggle(2000);
+        });
+        // FadeTo
+        $('#FadeTo').click(function(){
+          $('h2').fadeTo(1000, .3);
+        });
+        $('.main').click(function(){
+          $('.sub').slideToggle(600);
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
